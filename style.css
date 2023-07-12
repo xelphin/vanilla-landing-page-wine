@@ -99,3 +99,54 @@ body {
     height: 20vh;
     margin: 40px;
 }
+
+/* DEMO */
+
+#home-demo {
+    display:flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.demo-box {
+    display:flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.demo-picture-div {
+    height: 40vh;
+}
+
+.demo-picture {
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 60% 60% 0 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.demo-picture-bottle {
+    background-image: url('./assets/wine.png');
+    background-repeat: no-repeat;
+    height:70vh;
+    width: 400px;
+    margin: 0;
+}
+
+#demo-picture-1 {
+    background-image: url('./assets/hands_blue.jpg');
+}
+
+#demo-picture-2 {
+    background-image: url('./assets/two_women.jpg');
+}
+
+#demo-picture-3 {
+    background-image: url('./assets/sleeping_woman.jpg');
+}
