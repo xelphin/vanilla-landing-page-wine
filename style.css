@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('./assets/women_in_blue_and_gold.jpg');
+    background-image: url('./assets/kiss.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -60,7 +60,20 @@ body {
 #navbar-section-right {
     text-align: right;
 }
+
+#navbar h3 {
+    transition: color 0.1s ease-in 0s;
+}
+#navbar h3:hover {
+    color: var(--dark);
+}
 /* Title */
+
+@keyframes animation_title {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 #home-landing-title {
     text-align: center;
     position: relative;
@@ -72,6 +85,8 @@ body {
     margin: 0 0 100px 0;
     font-family: var(--title);
     letter-spacing: 25px;
+    animation-name: animation_title;
+    animation-duration: 2s;
 }
 
 /* DESCRIPTION */
@@ -114,8 +129,10 @@ body {
     display:flex;
     flex-direction: column;
     height: 50vh;
+    text-align: center;
 }
 
+/* demo picture */
 .demo-picture-div {
     height: 40vh;
 }
@@ -128,6 +145,8 @@ body {
     border-radius: 60% 60% 0 0;
     align-items: center;
     display: flex;
+    position: relative;
+    transition: scale 1.5s ease-in 0s;
     justify-content: center;
 }
 
@@ -137,6 +156,11 @@ body {
     height:70vh;
     width: 400px;
     margin: 0;
+    position: relative;
+}
+
+.demo-picture:hover {
+    transform: scale(1.02,1.02);
 }
 
 #demo-picture-1 {
@@ -149,4 +173,20 @@ body {
 
 #demo-picture-3 {
     background-image: url('./assets/sleeping_woman.jpg');
+}
+
+/* demo text */
+.demo-text {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo-text h2 {
+    font-size: 3.2em;
+}
+.demo-text h3 {
+    margin-top: 10px;
+    width: 20vw;
 }
