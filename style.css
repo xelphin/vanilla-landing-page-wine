@@ -17,11 +17,14 @@
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--light);
+    align-items: center;
 }
 
 /* LANDING */
 #home-landing {
     height: 60vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,6 +33,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: var(--light);
+    border-radius: 0 0 7% 7%;
 }
 /* Navbar */
 #navbar {
@@ -43,7 +47,7 @@ body {
 }
 
 #navbar div {
-    width: 25vw;
+    width: 20vw;
     margin: 40px;
     
 }
@@ -68,4 +72,30 @@ body {
     margin: 0 0 100px 0;
     font-family: var(--title);
     letter-spacing: 25px;
+}
+
+/* DESCRIPTION */
+
+.home-section-title {
+    color: var(--dark);
+    font-family: 'Instrument Serif', serif;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.home-section-text {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#home-description {
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 20vh;
+    margin: 40px;
 }
